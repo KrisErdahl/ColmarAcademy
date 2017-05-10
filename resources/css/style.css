@@ -1,5 +1,7 @@
+
+/* Base size 16px */
 html {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 body {
@@ -15,27 +17,27 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 3.55rem;
+  height: 4rem;
   background-color: #92D3FF;
   color: #6F797F;
   top: 0;
 }
 
-.colmar_intro {
-  display: inline-block;
+.colmar-intro {
+  display: flex;
   justify-content: flex-start;
-  /*align-items: center;*/
+  align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin: 0 1rem 1 1.33rem;
+  margin: 0 1rem 0 1.5rem;
 }
 
-.colmar_intro img {
-  display: inline-block;
+.colmar-intro img {
+  display: inline;
 }
 
-.colmar_intro p {
-  display: inline-block;
+.colmar-intro p {
+  display: inline;
 }
 
 .nav_options {
@@ -46,13 +48,31 @@ nav {
   flex-wrap: nowrap;
 }
 
-.nav_link {
-  color: darkblue;
-  background-color: #92D3FF;
-  transition: background-color 50ms ease-in 100ms;
-  display: inline-block;
+.nav_item {
+  display: flex;
 }
 
-.nav_link:hover {
+li {
+  color: darkblue;
+  background-color: #92D3FF;
+  transition: background-color 50ms ease-in 50ms;
+  display: inline-block;
+  padding: .4rem .5rem;
+}
+
+li:hover {
   background-color: #e0f2ff;
+}
+
+.button {
+  background-color: #496a7f;
+  padding: .6rem .6rem;
+  margin-right: 1rem;
+  transition: background-color 50ms ease-in 50ms;
+}
+
+.button:hover {
+  background-color: #e0f2ff;
+  margin-right: 1rem;
+  padding: .6rem .6rem;
 }
