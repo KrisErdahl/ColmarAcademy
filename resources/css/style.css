@@ -1,0 +1,58 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  width: 100%;
+}
+
+em {
+  font-weight: bold;
+}
+
+nav {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.55rem;
+  background-color: #92D3FF;
+  color: #6F797F;
+  top: 0;
+}
+
+.colmar_intro {
+  display: inline-block;
+  justify-content: flex-start;
+  /*align-items: center;*/
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0 1rem 1 1.33rem;
+}
+
+.colmar_intro img {
+  display: inline-block;
+}
+
+.colmar_intro p {
+  display: inline-block;
+}
+
+.nav_options {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  /*align-items: center;*/
+  flex-wrap: nowrap;
+}
+
+.nav_link {
+  color: darkblue;
+  background-color: #92D3FF;
+  transition: background-color 50ms ease-in 100ms;
+  display: inline-block;
+}
+
+.nav_link:hover {
+  background-color: #e0f2ff;
+}
