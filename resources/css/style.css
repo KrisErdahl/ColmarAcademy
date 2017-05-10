@@ -12,6 +12,8 @@ em {
   font-weight: bold;
 }
 
+/* Navigation Bar */
+
 nav {
   flex-direction: row;
   display: flex;
@@ -30,6 +32,7 @@ nav {
   flex-direction: row;
   flex-wrap: nowrap;
   margin: 0 1rem 0 1.5rem;
+  width: 80%;
 }
 
 .colmar-intro img {
@@ -46,6 +49,8 @@ nav {
   justify-content: flex-end;
   /*align-items: center;*/
   flex-wrap: nowrap;
+  flex-shrink: 0;
+  margin-right: .5rem;
 }
 
 .nav_item {
@@ -57,22 +62,24 @@ li {
   background-color: #92D3FF;
   transition: background-color 50ms ease-in 50ms;
   display: inline-block;
-  padding: .4rem .5rem;
+  padding: .5rem .6rem;
+  border-radius: 5px;
+}
+
+li a {
+  color: black;
 }
 
 li:hover {
   background-color: #e0f2ff;
 }
 
-.button {
+/*.button {
   background-color: #496a7f;
   padding: .6rem .6rem;
-  margin-right: 1rem;
   transition: background-color 50ms ease-in 50ms;
 }
 
 .button:hover {
   background-color: #e0f2ff;
-  margin-right: 1rem;
-  padding: .6rem .6rem;
-}
+}*/
