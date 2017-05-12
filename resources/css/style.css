@@ -12,7 +12,32 @@ em {
   font-weight: bold;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: .9rem;
+}
+
+h5 {
+  font-size: .75rem;
+}
+
 /* Navigation Bar */
+
+header {
+  position: fixed;
+  width: 100%;
+}
 
 nav {
   flex-direction: row;
@@ -37,9 +62,11 @@ nav {
 
 .colmar-intro img {
   display: inline;
+  max-height: 45px;
+  width: auto;
 }
 
-.colmar-intro p {
+.colmar-intro h2 {
   display: inline;
 }
 
@@ -83,3 +110,75 @@ li:hover {
 .button:hover {
   background-color: #e0f2ff;
 }*/
+
+/* Jumbotron section, right under nav.  Learn something new everyday. */
+
+.jumbotron {
+  width: 100%;
+  background-color: lightgray;
+  padding-top: 6rem;
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.students {
+  width: 60%;
+  margin: 0 2.5rem 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.students img {
+  width: 100%;
+  height: auto;
+}
+
+.learn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 30%;
+}
+
+.learn h1 {
+  font-weight: bold;
+  margin-top: 30%;
+}
+
+.learn h3 {
+  padding: 1rem 0;
+}
+
+.learn .button {
+  padding: .5rem 9rem;
+  border-radius: 5px;
+  background-color: gray;
+  color: #e0f2ff;
+  flex-shrink: 0;
+  transition: padding 50ms ease-in 50ms, color 50ms ease-in 50ms;
+  }
+
+.button:hover {
+  background-color: #e0f2ff;
+  color: #6f797f;
+  }
+
+/* Emanuel jumbo2 with campus information. */
+
+.jumbo2 {
+  background-color: lightblue;
+  padding-top: 2rem;
+}
+
+.students h2 {
+  margin: 2rem 0 1.5rem 0;
+}
+
+.students h4 {
+  margin-bottom: 1rem;
+}
