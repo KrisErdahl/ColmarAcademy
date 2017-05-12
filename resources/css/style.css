@@ -2,13 +2,14 @@
 /* Base size 16px */
 html {
   font-size: 16px;
+  line-height: 1.1;
 }
 
 body {
   width: 100%;
 }
 
-em {
+strong {
   font-weight: bold;
 }
 
@@ -120,7 +121,7 @@ li:hover {
   flex-direction: row;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .students {
@@ -147,11 +148,10 @@ li:hover {
 
 .learn h1 {
   font-weight: bold;
-  margin-top: 30%;
 }
 
 .learn h3 {
-  padding: 1rem 0;
+  margin: 1rem 0;
 }
 
 .learn .button {
@@ -173,6 +173,7 @@ li:hover {
 .jumbo2 {
   background-color: lightblue;
   padding-top: 2rem;
+  align-items: flex-start;
 }
 
 .students h2 {
@@ -181,4 +182,64 @@ li:hover {
 
 .students h4 {
   margin-bottom: 1rem;
+}
+
+.learn2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.upcoming {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 26.4375rem;
+  padding: 1rem;
+  background-color: lightblue;
+  transition: background-color 50ms ease-in;
+}
+
+.upcoming:hover {
+  background-color: blue;
+}
+
+.side_info_left {
+  width: 35%;
+  display: block;
+  margin-right: 1.5rem;
+}
+
+.side_info_left img {
+  width: 100%;
+  height: auto;
+}
+
+.side_info_right {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.side_info_right .title {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+.side_info_right .dates {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.side_info_right .campus {
+  color: black;
+  transition: color 50ms ease-in;
+}
+
+.side_info_right .campus:hover {
+  color: red;
 }
