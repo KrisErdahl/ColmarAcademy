@@ -8,7 +8,7 @@ body {
   width: 100%;
   font-family: "open sans", sans-serif;
   line-height: 1.4;
-  color: #263742;
+  color: #1f2d35;
 }
 
 strong {
@@ -40,6 +40,13 @@ h5 {
   font-size: .75rem;
 }
 
+img {
+  border: .03125rem solid #1f2d35;
+}
+
+video {
+  border: .03125rem solid #1f2d35;
+}
 /* Navigation Bar */
 
 header {
@@ -53,8 +60,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 4rem;
-  background-color: #92D3FF;
-  color: #263742;
+  background-color: #8dccf5;
   top: 0;
 }
 
@@ -72,6 +78,7 @@ nav {
   display: inline;
   max-height: 45px;
   width: auto;
+  border: 0;
 }
 
 .colmar-intro h1 {
@@ -83,7 +90,6 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  /*align-items: center;*/
   flex-wrap: nowrap;
   flex-shrink: 0;
   margin-right: .5rem;
@@ -94,8 +100,7 @@ nav {
 }
 
 li {
-  color: darkblue;
-  background-color: #92D3FF;
+  background-color: #8dccf5;
   transition: background-color 50ms ease-in 50ms;
   display: inline-block;
   padding: .5rem .6rem;
@@ -124,7 +129,7 @@ li:hover {
 
 .jumbotron {
   width: 100%;
-  background-color: lightgray;
+  background-color: gainsboro;
   padding-top: 6rem;
   flex-direction: row;
   display: flex;
@@ -168,7 +173,7 @@ li:hover {
   background-color: gray;
   color: #e0f2ff;
   flex-shrink: 0;
-  transition: padding 50ms ease-in 50ms, color 50ms ease-in 50ms;
+  transition: padding 50ms, color 50ms;
   }
 
 .button:hover {
@@ -179,7 +184,7 @@ li:hover {
 /* Emanuel jumbo2 with campus information. */
 
 .jumbo2 {
-  background-color: lightblue;
+  background-color: RGBa(142, 205, 245, .8);
   padding-top: 2rem;
   align-items: flex-start;
 }
@@ -205,15 +210,13 @@ li:hover {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  /*align-items: flex-start;*/
   align-items: center;
   padding: 1rem;
-  background-color: lightblue;
   transition: background-color 50ms ease-in;
 }
 
 .upcoming:hover {
-  background-color: blue;
+  background-color: #d6e9f5;
 }
 
 .side_info_left {
@@ -277,7 +280,7 @@ li:hover {
 
 .courses {
   background-color: white;
-  /*height: 13.75rem;*/
+  border: .5px solid #1f2d35;
   height: 22rem;
   width: 25%;
   flex-direction: column;
@@ -290,8 +293,7 @@ li:hover {
 
 .courses img {
   width: 100%;
-  /*height: auto;*/
-  /*margin-bottom: 1rem;*/
+  border: 0;
 }
 
 .course_info {
@@ -318,8 +320,7 @@ li:hover {
   display: block;
   width: 100%;
   padding-top: 2rem;
-  /*padding-bottom: 1rem;*/
-  background-color: lightblue;
+  background-color: RGBa(142, 205, 245, .8);
   text-align: center;
 }
 
