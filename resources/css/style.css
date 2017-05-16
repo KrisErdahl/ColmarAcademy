@@ -1,5 +1,5 @@
 
-/* Base size 16px */
+/* Base size set 16px */
 html {
   font-size: 16px;
 }
@@ -11,11 +11,13 @@ body {
   color: #242313;
 }
 
+/* Titles in Libre Franklin font-family */
 strong {
   font-weight: 700;
   font-family: "libre franklin", sans-serif;
 }
 
+/* Colmar Academy nav "logo", extra light font-weight on "Academy" */
 #light {
   font-weight: 200;
 }
@@ -27,7 +29,6 @@ h1 {
 
 h2 {
   font-size: 1.75rem;
-  /*font-family: "libre franklin", sans-serif;*/
 }
 
 h3 {
@@ -70,7 +71,6 @@ nav {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-direction: row;
   flex-wrap: nowrap;
   margin: 0 1rem 0 1.5rem;
   width: 80%;
@@ -90,7 +90,6 @@ nav {
 
 .nav_options {
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
   flex-wrap: nowrap;
   flex-shrink: 0;
@@ -111,6 +110,7 @@ li {
 
 li a {
   color: #242313;
+  text-shadow: .035rem .035rem .15rem #fffbc2;
 }
 
 li:hover {
@@ -174,7 +174,7 @@ li:hover {
   /*color: #6f797f;*/
   }
 
-/* Emanuel jumbo2 with campus information. */
+/* Emanuel pictured section with campus information. */
 
 .jumbo2 {
   background-color: #d0baff;
@@ -249,7 +249,7 @@ li:hover {
   color: #7c64b2;
 }
 
-/* Start Learning, jumbo3 with course information. */
+/* Start Learning section with course information. */
 
 .jumbo3 {
   padding-top: 2rem;
@@ -280,7 +280,6 @@ li:hover {
   align-items: flex-start;
   justify-content: flex-start;
   margin: 1rem;
-  /*padding: 1rem 1rem 1.5rem 1rem;*/
   display: inline-flex;
 }
 
@@ -320,7 +319,6 @@ li:hover {
 video {
   width: 100%;
   display: block;
-  /*margin: 1.5rem;*/
 }
 
 /* Footer section */
@@ -347,8 +345,17 @@ footer li {
   padding: 0 1rem 0 0;
   color: #242313;
   transition: color 0;
+  text-shadow: 0 0 0 #242313;
 }
 
 .nav-foot:hover {
   color: #fffbc2;
+}
+
+/* Smart phone size screen changes */
+
+@media only and screen (max-width: 1010px;) {
+  body {
+    color: pink;
+  }
 }
