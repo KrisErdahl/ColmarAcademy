@@ -96,25 +96,25 @@ nav {
   margin-right: .5rem;
 }
 
-.nav_item {
-  display: flex;
-}
-
-li {
+.nav-item {
   background-color: #7c64b2;
   transition: background-color 50ms ease-in 50ms;
   display: inline-block;
+}
+
+.nav-link {
+  color: #242313;
+  /*text-shadow: .035rem .035rem .15rem #fffbc2;*/
   padding: .5rem .6rem;
   border-radius: 5px;
 }
 
-li a {
-  color: #242313;
-  text-shadow: .035rem .035rem .15rem #fffbc2;
+.nav-link:hover {
+  background-color: #fffbc2;
 }
 
-li:hover {
-  background-color: #fffbc2;
+.nav-small {
+  display: none;
 }
 
 /* Jumbotron section, right under nav.  Learn something new everyday. */
@@ -160,19 +160,26 @@ li:hover {
 }
 
 .learn .button h4 a {
+  display: block;
   padding: .5rem 9rem;
+  border: .2rem solid #313163;
   border-radius: 5px;
   background-color: #313163;
   color: #fffbc2;
   flex-shrink: 0;
   text-transform: uppercase;
-  transition: padding 50ms;
+  transition: border-color 50ms, background-color 50ms;
   }
 
 .button h4 a:hover {
-  background-color: #242313;
-  /*color: #6f797f;*/
+  border-color: #41FFE9;
   }
+
+.button h4 a:active {
+  transform: translateY(.1rem);
+  background-color: #7c64b2;
+  }
+
 
 /* Emanuel pictured section with campus information. */
 
@@ -180,6 +187,7 @@ li:hover {
   background-color: #d0baff;
   padding-top: 2rem;
   align-items: flex-start;
+  width: 100%;
 }
 
 .students h2 {
@@ -195,6 +203,7 @@ li:hover {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  width: 33%;
 }
 
 /* Upcoming campus information blocks */
@@ -206,6 +215,7 @@ li:hover {
   align-items: center;
   padding: 1rem;
   transition: background-color 50ms ease-in;
+  width: 100%;
 }
 
 .upcoming:hover {
@@ -228,7 +238,6 @@ li:hover {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 65%;
 }
 
 .side_info_right .title {
@@ -238,6 +247,7 @@ li:hover {
 .side_info_right .dates {
   margin-top: .5rem;
   margin-bottom: .5rem;
+  max-width: 18rem;
 }
 
 .side_info_right .campus {
@@ -333,29 +343,122 @@ footer {
   height: 3rem;
 }
 
-footer li {
-  padding: 0;
+footer h4 {
+  display: inline-block;
+}
+
+footer .nav_options {
+  /*padding: 0;
+  flex-shrink: 0;*/
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  width: 25%;
 }
 
 .nav-foot {
-  align-items: flex-start;
-  justify-content: flex-end;
   display: inline-block;
   background-color: #d0baff;
   padding: 0 1rem 0 0;
   color: #242313;
   transition: color 0;
-  text-shadow: 0 0 0 #242313;
 }
 
 .nav-foot:hover {
   color: #fffbc2;
 }
 
+
 /* Smart phone size screen changes */
 
-@media only and screen (max-width: 1010px;) {
-  body {
-    color: pink;
+@media only screen and (max-width: 1010px) {
+
+/* Responsive Nav bar */
+  nav {
+    width: 100%;
+    background-color: #d0baff;
   }
+
+  .nav_options {
+    width: 100%;
+    margin-right: 0;
+    flex-shrink: 1;
+  }
+
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav-small {
+    display: inline-block;
+    padding-top: 1rem;
+  }
+
+  .nav-icon img {
+    border: 0;
+  }
+
+  .colmar-intro, .nav-item {
+    display: none;
+  }
+
+/* Responsive Section 1 - Learn Something New */
+
+.jumbotron {
+  padding-top: 4rem;
+  flex-direction: column;
+  /*display: flex;*/
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.students {
+  background-image: url("../../images/banner.jpg") cover no-repeat;
+  width: 100%;
+  min-height: 11.25rem;
+  margin: 0 auto;
+}
+
+.learn {
+  /*display: flex;
+  flex-direction: column;*/
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/*.learn h1 {
+  font-weight: bold;
+}*/
+
+.learn h3 {
+  margin: 2rem 0 1.5rem;
+}
+
+.learn .button h4 a {
+  /*display: block;
+  padding: .5rem 9rem;
+  border: .2rem solid #313163;
+  border-radius: 5px;
+  background-color: #313163;
+  color: #fffbc2;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  transition: border-color 50ms, background-color 50ms;*/
+  flex-shrink: 1;
+  }
+
+.button h4 a:hover {
+  border-color: #fffb2c;
+  }
+
+.button h4 a:active {
+  transform: translateY(.1rem);
+  background-color: #7c64b2;
+  }
+
+
+
 }
