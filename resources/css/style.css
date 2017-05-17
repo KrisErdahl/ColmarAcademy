@@ -228,9 +228,13 @@ nav {
   margin-right: 1.5rem;
 }
 
-.side_info_left img {
+.side_info_left .big {
   width: 100%;
   height: auto;
+}
+
+.side_info_left .small {
+  display: none;
 }
 
 .side_info_right {
@@ -441,6 +445,78 @@ footer .nav_options {
   transform: translateY(.1rem);
   background-color: #7c64b2;
   }
+
+/* Responsive Section 2, Upcoming events */
+
+.jumbo2 {
+  background-color: #d0baff;
+  padding-top: 0rem;
+  align-items: flex-start;
+  width: 100%;
+  flex-direction: column;
+}
+
+.jumbo2 .students {
+  display: none;
+}
+
+.learn2 {
+  width: 100%;
+}
+
+/* Upcoming campus information blocks */
+
+.upcoming {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  transition: background-color 50ms ease-in;
+  width: 100%;
+}
+
+.side_info_left .big {
+  display: none;
+}
+
+.side_info_left {
+  flex-shrink: 0;
+}
+
+.side_info_left .small {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-right: 1rem;
+}
+
+.side_info_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.side_info_right .title {
+  margin: 0;
+}
+
+.side_info_right .dates {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  max-width: 18rem;
+}
+
+.side_info_right .campus {
+  color: #242313;
+  transition: color 50ms ease-in;
+}
+
+.side_info_right .campus:hover {
+  color: #7c64b2;
+}
+
+
+
 
 /* Responsive Footer */
 
