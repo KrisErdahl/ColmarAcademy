@@ -584,7 +584,7 @@ footer .nav_options {
   width: 100%;
   height: auto;
   margin-top: 1.5rem;
-  margin-bottom: 0;
+  margin-bottom: -2rem;
 }
 
 .jumbo4 .learn2 .upcoming {
@@ -607,6 +607,12 @@ footer .nav_options {
 
 footer .nav_options {
   display: none;
+}
+
+footer {
+  padding-top: 0rem;
+  padding-left: 1.5rem;
+  height: 3rem;
 }
 
 }
