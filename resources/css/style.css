@@ -409,7 +409,6 @@ footer .nav_options {
 .jumbotron {
   padding-top: 4rem;
   flex-direction: column;
-  /*display: flex;*/
   justify-content: flex-start;
   align-items: flex-start;
 }
@@ -422,31 +421,15 @@ footer .nav_options {
 }
 
 .learn {
-  /*display: flex;
-  flex-direction: column;*/
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-}
-
-/*.learn h1 {
-  font-weight: bold;
-}*/
-
-.learn h3 {
-  margin: 2rem 0 1.5rem;
+  margin: 2rem 2rem 2rem 1rem;
+  padding-right: 2rem;
 }
 
 .learn .button h4 a {
-  /*display: block;
-  padding: .5rem 9rem;
-  border: .2rem solid #313163;
-  border-radius: 5px;
-  background-color: #313163;
-  color: #fffbc2;
-  flex-shrink: 0;
-  text-transform: uppercase;
-  transition: border-color 50ms, background-color 50ms;*/
+  padding: .5rem 6rem;
   flex-shrink: 1;
   }
 
@@ -459,6 +442,10 @@ footer .nav_options {
   background-color: #7c64b2;
   }
 
+/* Responsive Footer */
 
+footer .nav_options {
+  display: none;
+}
 
 }
