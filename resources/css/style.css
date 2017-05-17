@@ -339,6 +339,10 @@ video {
   display: block;
 }
 
+#sub-title {
+  text-align: left;
+}
+
 /* Footer section */
 
 footer {
@@ -466,8 +470,8 @@ footer .nav_options {
 
 .learn2 {
   width: 100%;
-  margin-left: 0rem;
-  margin-right: 0rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 /* Upcoming campus information blocks */
@@ -571,6 +575,32 @@ footer .nav_options {
 
 .start_mobile li:last-child {
   margin-bottom: 2rem;
+}
+
+/* Responsive design for section 4, Thesis */
+
+.jumbo4 .students {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+.jumbo4 .learn2 .upcoming {
+  display: none;
+}
+
+.big {
+  display: none;
+}
+
+#sub-title {
+  display: none;
+}
+
+.jumbo4 h4 {
+  display: none;
 }
 
 /* Responsive Footer */
