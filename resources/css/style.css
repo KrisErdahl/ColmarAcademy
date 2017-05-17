@@ -427,9 +427,9 @@ footer .nav_options {
 .learn {
   justify-content: flex-start;
   align-items: flex-start;
-  width: 100%;
-  margin: 2rem 2rem 2rem 1rem;
-  padding-right: 2rem;
+  width: 94%;
+  margin: 2rem 0rem 2rem 1rem;
+  padding-right: 0rem;
 }
 
 .learn .button h4 a {
@@ -469,9 +469,10 @@ footer .nav_options {
 .upcoming {
   flex-direction: column;
   align-items: flex-start;
-  padding: 1rem;
-  transition: background-color 50ms ease-in;
-  width: 100%;
+  padding: 0rem;
+  padding-right: 0rem;
+  transition: 0;
+  width: 94%;
 }
 
 .side_info_left .big {
@@ -479,14 +480,15 @@ footer .nav_options {
 }
 
 .side_info_left {
-  flex-shrink: 0;
+  width: 100%;
+  margin: 0;
 }
 
 .side_info_left .small {
-  width: 100%;
+  width: 97%;
   height: auto;
   display: block;
-  margin-right: 1rem;
+  margin: 0rem;
 }
 
 .side_info_right {
@@ -494,28 +496,27 @@ footer .nav_options {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-}
-
-.side_info_right .title {
-  margin: 0;
+  margin: 1.5rem 1rem 1rem 1rem;
 }
 
 .side_info_right .dates {
   margin-top: .5rem;
   margin-bottom: .5rem;
-  max-width: 18rem;
+  max-width: 25rem;
 }
 
 .side_info_right .campus {
   color: #242313;
-  transition: color 50ms ease-in;
+  transition: color 0; background-color 0;
+}
+
+.side_info_right .campus:active {
+  color:
 }
 
 .side_info_right .campus:hover {
-  color: #7c64b2;
+  background-color:
 }
-
-
 
 
 /* Responsive Footer */
